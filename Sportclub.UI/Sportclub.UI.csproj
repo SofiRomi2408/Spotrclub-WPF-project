@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\client.png" />
+    <None Remove="Images\coach.png" />
+    <None Remove="Images\SessionStatus\Status_Canceled.png" />
+    <None Remove="Images\SessionStatus\Status_Completed.png" />
+    <None Remove="Images\SessionStatus\Status_Running.png" />
+    <None Remove="Images\SessionStatus\Status_Scheduled.png" />
+    <None Remove="Images\trainingSession.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sportclub.Model\Sportclub.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\..\.nuget\packages\automapper\13.0.1\lib\net6.0\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet">
+      <HintPath>..\AutoMapper-AutoMapper-10150bb\nuget.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\client.png" />
+    <Resource Include="Images\coach.png" />
+    <Resource Include="Images\SessionStatus\Status_Canceled.png" />
+    <Resource Include="Images\SessionStatus\Status_Completed.png" />
+    <Resource Include="Images\SessionStatus\Status_Running.png" />
+    <Resource Include="Images\SessionStatus\Status_Scheduled.png" />
+    <Resource Include="Images\trainingSession.png" />
+  </ItemGroup>
+
+</Project>
